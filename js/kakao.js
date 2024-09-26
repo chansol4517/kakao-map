@@ -29,6 +29,8 @@ window.addEventListener("resize", () => {
 	//리사이즈 될때마다 컨트롤 패널 다시 추가
 	map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 	map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+	//리사이즈시 강제 토글버튼 초기화
+	btnToggle.classList.remove("on");
 });
 
 btnToggle.addEventListener("click", e => {
