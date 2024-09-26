@@ -1,2 +1,18 @@
 @import "reset";
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+main {
+	padding: 10vh 10vw;
+
+	h1 {
+		font: 100 8vmax/1 "raleway";
+		color: #333;
+		margin-bottom: 70px;
+	}
+
+	#map {
+		width: 100%;
+		height: 60vh;
+		background: #000;
+	}
+}
