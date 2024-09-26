@@ -10,6 +10,24 @@ main {
 		margin-bottom: 70px;
 	}
 
+	.trafficToggle {
+		display: inline-block;
+		padding: 10px 16px;
+		border: none;
+		background-image: linear-gradient(45deg, #49e4ff, #00c3ff);
+		box-shadow: 10px 10px 20px rgba(73, 228, 255, 0.5);
+		margin-bottom: 50px;
+		border-radius: 3px;
+		font: 900 0.8rem/1 "raleway";
+		color: #fff;
+		cursor: pointer;
+
+		&.on {
+			background-image: linear-gradient(45deg, #f049ff, #f307ac);
+			box-shadow: 10px 10px 20px rgba(240, 73, 255, 0.5);
+		}
+	}
+
 	#map {
 		width: 100%;
 		height: 60vh;
