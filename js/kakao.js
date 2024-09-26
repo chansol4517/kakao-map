@@ -3,7 +3,9 @@ const mapContainer = document.querySelector("#map");
 
 //지도에 적용할 옵션값을 객체로 묶어서 할당
 const mapOption = {
-	center: new kakao.maps.LatLng(37.5444107, 127.0437792), //출력할 지도의 위도, 경도
+	//카카오 지도 api 샘플에서 클릭위치 마커표시하기 - 직접해보기 - 기존 위도, 경도값 넣어 실행
+	//해당 위치에서 정밀하게 위치 클릭해주고 하단에 표시된 위도, 경도 코드를 붙여넣기
+	center: new kakao.maps.LatLng(37.54445506191197, 127.04430086252265), //출력할 지도의 위도, 경도
 	level: 1 //지도의 확대 정도
 };
 
@@ -11,7 +13,7 @@ const mapOption = {
 const map = new kakao.maps.Map(mapContainer, mapOption);
 
 // 지도위치에 관한 인스턴스 생성
-const markerPosition = new kakao.maps.LatLng(37.5444107, 127.0437792);
+const markerPosition = new kakao.maps.LatLng(37.54445506191197, 127.04430086252265);
 
 // 마커에 대한 인스턴스 생성 (인수로 위에서 생성된 지도위치 인스턴스 필요)
 const marker = new kakao.maps.Marker({
